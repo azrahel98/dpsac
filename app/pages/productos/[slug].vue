@@ -15,7 +15,7 @@
         <div class="w-full md:w-1/2">
           <div
             class="relative aspect-square bg-white rounded-xl flex items-center justify-center p-8 border border-border-light">
-            <img :src="producto.imagen" :alt="producto.nombre" class="max-h-full max-w-full object-contain" />
+            <img :src="useAsset(producto.imagen)" :alt="producto.nombre" class="max-h-full max-w-full object-contain" />
           </div>
         </div>
 

@@ -26,5 +26,5 @@
   </section>
 </template>
 <script setup lang="ts">
-const bgImage = '/img/bg2.jpg';
+const bgImage = useAsset('/img/bg2.jpg');
 </script>

@@ -15,7 +15,7 @@
         >
           <div class="h-52 bg-white flex items-center justify-center p-4">
             <img
-              :src="cat.imagen"
+              :src="useAsset(cat.imagen)"
               :alt="cat.nombre"
               loading="lazy"
               class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"

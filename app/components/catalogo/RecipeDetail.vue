@@ -1,7 +1,7 @@
 <template>
   <div class="bg-surface-container-low rounded-xl p-6">
     <div class="flex gap-6 flex-col md:flex-row">
-      <img :src="receta.imagen" :alt="receta.titulo" loading="lazy"
+      <img :src="useAsset(receta.imagen)" :alt="receta.titulo" loading="lazy"
         class="w-full md:w-64 h-48 rounded-lg object-cover flex-shrink-0" />
       <div class="flex flex-col gap-4 min-w-0">
         <div>

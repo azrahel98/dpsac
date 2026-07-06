@@ -4,7 +4,7 @@
     @click="$emit('select', receta)"
   >
     <img
-      :src="receta.imagen"
+      :src="useAsset(receta.imagen)"
       :alt="receta.titulo"
       loading="lazy"
       class="w-20 h-20 rounded-lg object-cover flex-shrink-0"

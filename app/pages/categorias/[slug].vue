@@ -9,7 +9,7 @@
         </nav>
         <div class="flex items-center gap-6">
           <div class="w-20 h-20 rounded-full bg-surface-muted flex-shrink-0 overflow-hidden">
-            <img :src="categoria.imagen" :alt="categoria.nombre" class="w-full h-full object-cover" />
+            <img :src="useAsset(categoria.imagen)" :alt="categoria.nombre" class="w-full h-full object-cover" />
           </div>
           <div>
             <h1 class="font-headline-lg text-headline-lg text-primary mb-2">{{ categoria.nombre }}</h1>

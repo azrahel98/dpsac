@@ -5,7 +5,7 @@
   >
     <div class="relative aspect-[4/3] bg-white flex items-center justify-center p-4 border-b border-border-light">
       <img
-        :src="producto.imagen"
+        :src="useAsset(producto.imagen)"
         :alt="producto.nombre"
         loading="lazy"
         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
