@@ -23,7 +23,7 @@ jobs:
       - run: bun install
       - run: bun run generate
         env:
-          SITE_URL: https://${{ github.repository_owner }}.github.io/dpsac
+          SITE_URL: https://${{ github.repository_owner }}.github.io
           BASE_URL: /dpsac/
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -4,7 +4,7 @@
         <HomeCategories />
         <HomeFeaturedProducts />
         <HomeBrandsBanner />
-        <HomeInfoBanner />
+        <!-- <HomeInfoBanner /> -->
     </main>
 </template>
 
