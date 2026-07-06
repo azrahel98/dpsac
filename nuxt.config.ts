@@ -10,6 +10,9 @@ export default defineNuxtConfig({
 	app: {
 		baseURL: process.env.BASE_URL || '/dpsac/',
 		head: {
+			meta: [
+				{ name: 'google-site-verification', content: '6HJIZ9YN5lWpSrLdwnmExwPUQfwKxVWksphrkI0EDpk' }
+			],
 			link: [
 				{ rel: 'preconnect', href: 'https://fonts.googleapis.com' },
 				{ rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
