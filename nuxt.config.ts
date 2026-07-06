@@ -2,7 +2,7 @@ export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
 	devtools: { enabled: true },
 	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
-	site: { url: process.env.SITE_URL || 'https://<tu-usuario>.github.io/dpsac' },
+	site: { url: process.env.SITE_URL || 'https://azrahel98.github.io' },
 	components: [
 		{ path: '~/components/catalogo', pathPrefix: false },
 		'~/components',
