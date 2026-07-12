@@ -3,8 +3,8 @@
     class="flex items-start gap-4 p-4 rounded-lg border border-border-light bg-surface-container-lowest hover:shadow-md transition-shadow w-full text-left"
     @click="$emit('select', receta)"
   >
-    <img
-      :src="useAsset(receta.imagen)"
+    <NuxtImg
+      :src="receta.imagen"
       :alt="receta.titulo"
       loading="lazy"
       class="w-20 h-20 rounded-lg object-cover flex-shrink-0"

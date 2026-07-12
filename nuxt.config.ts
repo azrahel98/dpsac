@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
 	devtools: { enabled: true },
-	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap'],
+	modules: ['@nuxtjs/tailwindcss', '@nuxtjs/sitemap', 'nuxt-schema-org', '@nuxt/image'],
 	site: { url: process.env.SITE_URL || 'https://azrahel98.github.io' },
 	components: [
 		{ path: '~/components/catalogo', pathPrefix: false },

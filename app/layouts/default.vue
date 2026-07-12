@@ -3,6 +3,6 @@
     <AppHeader />
     <slot />
     <WhatsAppButton />
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </div>
 </template>

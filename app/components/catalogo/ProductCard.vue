@@ -4,8 +4,8 @@
     class="group flex flex-col bg-surface-container-lowest border border-border-light rounded-lg overflow-hidden shadow-[0px_4px_20px_rgba(0,31,63,0.05)] hover:shadow-[0px_8px_30px_rgba(0,31,63,0.12)] transition-shadow"
   >
     <div class="relative aspect-[4/3] bg-white flex items-center justify-center p-4 border-b border-border-light">
-      <img
-        :src="useAsset(producto.imagen)"
+      <NuxtImg
+        :src="producto.imagen"
         :alt="producto.nombre"
         loading="lazy"
         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"

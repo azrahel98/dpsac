@@ -14,8 +14,8 @@
           class="group flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-border-light hover:shadow-lg transition-shadow w-64"
         >
           <div class="h-52 bg-white flex items-center justify-center p-4">
-            <img
-              :src="useAsset(cat.imagen)"
+            <NuxtImg
+              :src="cat.imagen"
               :alt="cat.nombre"
               loading="lazy"
               class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"

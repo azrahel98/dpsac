@@ -27,7 +27,7 @@
             <NuxtLink v-for="p in resultados" :key="p.id" :to="`/productos/${p.slug}`"
               class="flex items-center gap-3 px-4 py-3 hover:bg-surface-muted transition-colors"
               @click="seleccionarProducto">
-              <img :src="useAsset(p.imagen)" :alt="p.nombre" class="w-10 h-10 rounded-lg object-cover" loading="lazy" />
+              <NuxtImg :src="p.imagen" :alt="p.nombre" class="w-10 h-10 rounded-lg object-cover" loading="lazy" />
               <div class="min-w-0">
                 <p class="font-label-md text-label-md text-primary truncate">{{ p.nombre }}</p>
                 <p class="font-label-sm text-label-sm text-outline">{{ p.sku }}</p>
@@ -60,7 +60,7 @@
           <NuxtLink v-for="p in resultados" :key="p.id" :to="`/productos/${p.slug}`"
             class="flex items-center gap-3 px-4 py-3 hover:bg-surface-muted transition-colors"
             @click="seleccionarProducto">
-            <img :src="useAsset(p.imagen)" :alt="p.nombre" class="w-10 h-10 rounded-lg object-cover" loading="lazy" />
+            <NuxtImg :src="p.imagen" :alt="p.nombre" class="w-10 h-10 rounded-lg object-cover" loading="lazy" />
             <div class="min-w-0">
               <p class="font-label-md text-label-md text-primary truncate">{{ p.nombre }}</p>
               <p class="font-label-sm text-label-sm text-outline">{{ p.sku }}</p>

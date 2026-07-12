@@ -8,7 +8,7 @@
         Trabajamos con las mejores marcas del rubro
       </p>
       <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 mb-xl">
-        <img v-for="marca in marcas" :key="marca.nombre" :src="useAsset(marca.logo)" :alt="marca.nombre" loading="lazy"
+        <NuxtImg v-for="marca in marcas" :key="marca.nombre" :src="marca.logo" :alt="marca.nombre" loading="lazy"
           class="h-12 md:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-all duration-300" />
       </div>
     </div>
@@ -19,7 +19,7 @@
 const marcas = [
   {
     nombre: 'Nestlé',
-    logo: '/img/brands/NESTLE.png',
+    logo: '/img/NESTLE.png',
   },
   {
     nombre: "Rich's",

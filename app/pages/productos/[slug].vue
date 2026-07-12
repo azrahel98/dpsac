@@ -15,7 +15,7 @@
         <div class="w-full md:w-1/2">
           <div
             class="relative aspect-square bg-white rounded-xl flex items-center justify-center p-8 border border-border-light">
-            <img :src="useAsset(producto.imagen)" :alt="producto.nombre" class="max-h-full max-w-full object-contain" />
+            <NuxtImg :src="producto.imagen" :alt="producto.nombre" class="max-h-full max-w-full object-contain" />
           </div>
         </div>
 
@@ -94,6 +94,21 @@ useSeoMeta({
   description: computed(() => producto.value.descripcion),
   ogTitle: computed(() => `${producto.value.nombre} - Distribuidora PRETEL`),
   ogDescription: computed(() => producto.value.descripcion),
-  ogImage: computed(() => producto.value.imagen),
+  ogImage: computed(() => `https://azrahel98.github.io/dpsac${producto.value.imagen}`),
 });
+
+useHead({
+  link: [
+    { rel: 'canonical', href: computed(() => `https://azrahel98.github.io/dpsac${route.path}`) }
+  ]
+});
+
+useSchemaOrg([
+  defineProduct({
+    name: producto.value.nombre,
+    description: producto.value.descripcion,
+    image: `https://azrahel98.github.io/dpsac${producto.value.imagen}`,
+    sku: producto.value.sku,
+  })
+]);
 </script>
